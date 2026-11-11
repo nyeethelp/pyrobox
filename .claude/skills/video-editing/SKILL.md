@@ -57,8 +57,30 @@ _None yet — teach me!_
 
 ## Workflow / order of operations
 
-<!-- e.g. 1. trim silences  2. color  3. captions  4. music  5. export -->
-_None yet._
+Target pipeline (adapted from a reference video the user shared: Christian
+Peverelli, "I Fully Automated My Video Editing Using Claude Code"):
+
+1. **Ingest:** join Pocket 3 split files, ffprobe, apply LUT if D-Log M.
+2. **Transcribe** with word-level timestamps (Parakeet on NVIDIA GPU; otherwise
+   Whisper / whisper.cpp / MLX-Whisper on Mac).
+3. **Cut from the transcript:** silences, flubs, repeated takes; pick the hook.
+   The reference cut a 2:46 raw hook to 0:31. Aim for that kind of tightness in the opening.
+4. **Graphics:** animations written as HTML/CSS/JS and rendered to video
+   (reference used HeyGen's Hyperframes; Remotion is an alternative). Use the brand kit.
+5. **B-roll:** screenshots of web pages/articles with highlighted lines (via a browser).
+6. **Music/SFX:** from the user's library, at the volumes in Style preferences.
+7. **Assemble + QC with ffmpeg:** check for black frames, audio sync, and loudness (-14 LUFS for YouTube).
+8. **Review loop:** user watches the cut and gives time-coded notes
+   ("2:14 SFX too loud"). Fix, then save each generalizable note as a rule here.
+
+## Setup checklist (what the user still needs to provide)
+
+- [ ] Claude desktop app → Claude Code in **local** mode, on the computer with the footage
+- [ ] Project folder: `raw/`, `assets/` (logo, fonts, music, sfx, LUT), `exports/`
+- [ ] Brand kit: 2–4 hex colors, 1–2 fonts, logo (PNG with transparent background)
+- [ ] Music source (Epidemic Sound, paid, or YouTube Audio Library, free)
+- [ ] 2–3 reference YouTubers/videos whose editing style to copy
+- [ ] Pocket 3 color mode (Normal / HLG / D-Log M) and resolution/fps
 
 ## Export settings
 
@@ -99,5 +121,6 @@ _None yet._
 ## Lesson log
 
 <!-- one dated line per lesson, newest first -->
+- 2026-11-11: Adopted reference pipeline (transcript-driven cuts, HTML animations, ffmpeg QC, time-coded feedback loop).
 - 2026-11-11: Talking-head, ~30 min raw, DJI Osmo Pocket 3; niche is business/finance/motivation.
 - 2026-11-11: Making long-form YouTube content (16:9); needs full editing help.
