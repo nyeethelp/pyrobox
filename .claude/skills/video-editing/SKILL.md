@@ -26,9 +26,15 @@ before falling back on general defaults.
   codecs, and duration.
 - Never overwrite the source file; write outputs to a new file name.
 
+## Channel context
+
+- Platform: **YouTube, long-form** (16:9). The user is new to editing and wants
+  help with everything: cuts, transitions, animations, titles, polish.
+- Raw footage is already recorded; edits start from those files.
+
 ## Style preferences
 
-<!-- e.g. aspect ratio, pacing, transitions, music volume, caption font/size/position -->
+<!-- e.g. pacing, transitions, music volume, caption font/size/position -->
 _None yet — teach me!_
 
 ## Workflow / order of operations
@@ -74,6 +80,5 @@ _None yet._
 
 ## Lesson log
 
-<!-- one dated line per lesson, newest first, e.g.
-- 2026-11-11: Prefers jump cuts over crossfades for talking-head videos.
--->
+<!-- one dated line per lesson, newest first -->
+- 2026-11-11: Making long-form YouTube content (16:9); needs full editing help.
