@@ -31,6 +31,24 @@ before falling back on general defaults.
 - Platform: **YouTube, long-form** (16:9). The user is new to editing and wants
   help with everything: cuts, transitions, animations, titles, polish.
 - Raw footage is already recorded; edits start from those files.
+- **Format:** talking head (user speaking to camera), raw takes about 30 min.
+- **Camera:** DJI Osmo Pocket 3. Before editing, run ffprobe to check
+  resolution/fps, codec (H.264 vs H.265), and 10-bit. Ask whether it was shot
+  in Normal, HLG, or D-Log M: D-Log M looks flat/grey and needs DJI's
+  D-Log M→Rec.709 LUT before any other color work. Long takes may be split
+  into several files; join them first (concat recipe).
+- **Niche:** business, finance, motivation/entrepreneurship.
+  - Animated numbers, charts, and key-term text on screen suit this niche well.
+  - Finance videos: suggest a short "not financial advice / for education"
+    disclaimer on screen or in the description. Keep claims factual.
+
+## Suggested defaults for this niche (until the user overrides)
+
+- Remove silences and flubbed takes (jump cuts); keep breaths natural, ~0.15s padding.
+- Punch-in zooms (~110–120%) on key points to hide jump cuts and add emphasis.
+- Strong hook in the first 30s; move the best line up front if needed.
+- Keyword pop-up text, simple animated charts for numbers, chapter markers.
+- Music low under speech (about -25 to -30 dB) with ducking; clean, minimal transitions.
 
 ## Style preferences
 
@@ -81,4 +99,5 @@ _None yet._
 ## Lesson log
 
 <!-- one dated line per lesson, newest first -->
+- 2026-11-11: Talking-head, ~30 min raw, DJI Osmo Pocket 3; niche is business/finance/motivation.
 - 2026-11-11: Making long-form YouTube content (16:9); needs full editing help.
